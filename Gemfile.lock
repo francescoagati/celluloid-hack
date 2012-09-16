@@ -1,22 +1,61 @@
-GEM
+GIT
+  remote: git://github.com/afcapel/websocket_parser.git
+  revision: 8d129dae5a3dbaffaf97332ccd74640060ac0add
   specs:
-    celluloid (0.10.0)
-    celluloid-io (0.10.0)
-      celluloid (~> 0.10.0)
-      nio4r (>= 0.3.1)
-    celluloid-zmq (0.10.0)
-      celluloid (~> 0.10.0)
-      celluloid-io (~> 0.10.0)
+    websocket_parser (0.1.0)
+      http
+
+GIT
+  remote: git://github.com/celluloid/celluloid-io.git
+  revision: 71974ba6e105eee4b1574a85da90272d00032d97
+  specs:
+    celluloid-io (0.12.1)
+      celluloid (~> 0.12.0)
+      nio4r (>= 0.4.0)
+
+GIT
+  remote: git://github.com/celluloid/celluloid-zmq.git
+  revision: ea1c41b6fba2605a3763bd7bf79c57f714f89983
+  specs:
+    celluloid-zmq (0.12.1)
+      celluloid (~> 0.12.0)
+      celluloid-io (~> 0.12.0)
       ffi
       ffi-rzmq
-    certified (0.1.0)
-    dcell (0.10.0)
-      celluloid (~> 0.10.0)
-      celluloid-zmq (~> 0.10.0)
+
+GIT
+  remote: git://github.com/celluloid/celluloid.git
+  revision: 79ef14177f1a6e37bf4109420a45492626e137ef
+  specs:
+    celluloid (0.12.1)
+      timers (>= 1.0.0)
+
+GIT
+  remote: git://github.com/celluloid/dcell.git
+  revision: d8c594af01d265d82d79d902d83f123b6b973c8e
+  specs:
+    dcell (0.11.0)
+      celluloid (~> 0.12.0)
+      celluloid-zmq (~> 0.12.0)
       moneta
       redis
       redis-namespace
-      reel (~> 0.0.1)
+      reel
+
+GIT
+  remote: git://github.com/celluloid/reel.git
+  revision: da76ae3dce83039603a4b69346c6017276ddead7
+  specs:
+    reel (0.3.0)
+      celluloid-io (>= 0.8.0)
+      http (>= 0.2.0)
+      http_parser.rb (>= 0.5.3)
+      rack (>= 1.4.0)
+      websocket_parser (>= 0.1.0)
+
+GEM
+  specs:
+    certified (0.1.0)
     ffi (1.1.5)
     ffi-rzmq (0.9.6)
       ffi
@@ -25,19 +64,19 @@ GEM
     http_parser.rb (0.5.3)
     moneta (0.6.0)
     nio4r (0.4.0)
+    rack (1.4.1)
     redis (3.0.1)
     redis-namespace (1.2.1)
       redis (~> 3.0.0)
-    reel (0.0.2)
-      celluloid-io (>= 0.8.0)
-      http (>= 0.2.0)
-      http_parser.rb (>= 0.5.3)
+    timers (1.0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  celluloid
-  celluloid-io
-  dcell
-  reel
+  celluloid!
+  celluloid-io!
+  celluloid-zmq!
+  dcell!
+  reel!
+  websocket_parser!
