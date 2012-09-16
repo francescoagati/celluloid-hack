@@ -1,2 +1,3 @@
 node1: bundle exec ruby node1.rb
 node2: bundle exec ruby node2.rb
+explorer: bundle exec ruby explorer.rb
