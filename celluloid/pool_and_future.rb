@@ -1,5 +1,5 @@
 require 'celluloid'
-load 'lib/rnd.rb'
+load '../lib/rnd.rb'
 
 #create a pool of 50 actors
 rnd_pool=Rnd.pool(size:50)

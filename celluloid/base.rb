@@ -1,5 +1,5 @@
 require 'celluloid'
-load 'lib/ping.rb'
+load '../lib/ping.rb'
 
 ping1=Ping.new
 
